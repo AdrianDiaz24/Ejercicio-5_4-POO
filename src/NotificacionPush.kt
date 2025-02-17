@@ -1,5 +1,5 @@
-class NotificacionPush: Notificable {
+class NotificacionPush(val aplicacion: String, val mensaje: String): Notificable {
     override fun enviarNotificacion() {
-        TODO("Not yet implemented")
+        println("$aplicacion \n$mensaje")
     }
 }
